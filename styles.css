@@ -2,13 +2,14 @@ html,
 body {
     background-color: rgb(10, 10, 39);
     /* background-color: rgb(23, 23, 84); */
-    color: #fff;
+    color: #261616;
     font-size: 1rem;
     overflow-x: hidden;
     padding: 0;
     margin: 0;
     -webkit-overflow-scrolling: auto;
 }
+ 
 
 a {
     color: white;
@@ -222,8 +223,12 @@ a:hover {
 
 /* ========================================== INFO BLOCK START ========================================== */
 
+.br{
+    border-radius: 0.4rem;
+}
+
 .infoBlock {
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(221, 251, 244, 1);
     padding: 1.2rem;
     border-radius: 0.4rem;
 }
@@ -235,6 +240,7 @@ a:hover {
 
 .infoDescription {
     text-align: justify !important;
+    /* display: flex; */
 }
 
 .mintNowBtn button {
@@ -242,12 +248,12 @@ a:hover {
     padding-left: 5rem;
     padding-right: 5rem;
     border-radius: 0.4rem !important;
-    color: rgba(255, 255, 255, 1);
+    color: rgba(25, 101, 221, 1);
     font-weight: bold;
     font-size: 1.4rem;
     /* border-color: rgba(255, 255, 255, 1); */
     border: none !important;
-    background-color: transparent;
+    background-color: #fdbfbf;
     animation: mintNowBtnAnimation 2s infinite;
     animation-direction: alternate;
     animation-timing-function: ease-in-out;
@@ -271,9 +277,9 @@ a:hover {
 }
 
 .mintNowBtn button:hover {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: #fdbfbf;
     border-color: rgb(255, 255, 255);
-    color: rgb(255, 255, 255);
+    color: rgba(25, 101, 221, 1);
     box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem rgb(255, 255, 255), 0 0 0.8rem rgb(255, 255, 255), 0 0 2.8rem rgb(255, 255, 255), inset 0 0 1.3rem rgb(255, 255, 255);
     animation: none;
 }
