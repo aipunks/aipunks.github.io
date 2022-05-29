@@ -1,0 +1,674 @@
+html,
+body {
+    background-color: rgb(10, 10, 39);
+    /* background-color: rgb(23, 23, 84); */
+    color: #fff;
+    font-size: 1rem;
+    overflow-x: hidden;
+    padding: 0;
+    margin: 0;
+    -webkit-overflow-scrolling: auto;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #efb615;
+    text-decoration: none;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.indent {
+    text-indent: 20px;
+}
+
+.landingPage {
+    min-height: 100vh;
+}
+
+.mainContent {
+    min-height: calc(100vh - 50px);
+    min-width: 90%;
+}
+
+/* ========================================== HEADER START ========================================== */
+
+.navbar {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    min-width: 300px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    z-index: 10;
+    background-color: transparent !important;
+    position: sticky;
+}
+
+.FAQ a {
+    text-decoration: none;
+    color: black;
+    height: 20px !important;
+    padding: 0 !important;
+    font-size: 1rem;
+}
+
+.FAQ-white a {
+    text-decoration: none;
+    color: white;
+    height: 20px !important;
+    padding: 0 !important;
+    font-size: 1rem;
+}
+
+.FAQ a:hover, .FAQ-white a:hover {
+    text-decoration: none;
+    color: #efb615;
+}
+
+.social-small svg {
+    fill: black;
+}
+
+.social-small.etherscan svg path:nth-child(2) {
+    fill: black;
+}
+
+.social-small.opensea svg:hover {
+    fill: #1868B7;
+}
+
+.social-small.twitter svg:hover {
+    fill: rgb(29, 155, 240);
+}
+
+.social-small.youtube svg:hover {
+    fill: rgb(255, 0, 0);
+}
+
+.white-icon svg {
+    fill: white;
+}
+
+.social-small.opensea svg:hover path:nth-child(2), .social-small.opensea svg:hover path:nth-child(3) {
+    fill: white;
+}
+
+.social-small.ehterscan svg:hover path:nth-child(2) {
+    fill: #bfcfda;
+}
+
+.social-small.ehterscan svg:hover path:nth-child(1) {
+    fill: #21325b;
+}
+
+
+.header-logo {
+    height: 30px;
+}
+
+@media (max-width: 640px) {
+    .header-logo {
+        height: 20px;
+    }
+}
+
+/* ========================================== HEADER END ========================================== */
+
+
+/* ========================================== TWENTY TWENTY START ========================================== */
+
+.twentytwenty-horizontal .twentytwenty-handle:before,
+.twentytwenty-horizontal .twentytwenty-handle:after {
+    content: " ";
+    display: block;
+    background: white;
+    /* background-image: linear-gradient(180deg, transparent, #fff); */
+    position: absolute;
+    z-index: 30;
+    -webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+}
+
+.twentytwenty-horizontal .twentytwenty-handle:before,
+.twentytwenty-horizontal .twentytwenty-handle:after {
+    width: 3px;
+    height: 9999px;
+    left: 50%;
+    margin-left: -1.5px;
+}
+
+
+.twentytwenty-handle {
+    height: 38px;
+    width: 38px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -22px;
+    margin-top: -22px;
+    border: 3px solid white;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+    -webkit-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    box-shadow: 0px 0px 12px rgba(51, 51, 51, 0.5);
+    z-index: 40;
+    cursor: pointer;
+}
+
+.twentytwenty-left-arrow,
+.twentytwenty-right-arrow,
+.twentytwenty-up-arrow,
+.twentytwenty-down-arrow {
+    width: 0;
+    height: 0;
+    border: 6px inset transparent;
+    position: absolute;
+}
+
+.twentytwenty-left-arrow,
+.twentytwenty-right-arrow {
+    top: 50%;
+    margin-top: -6px;
+}
+
+.twentytwenty-left-arrow {
+    border-right: 6px solid white;
+    left: 50%;
+    margin-left: -17px;
+}
+
+.twentytwenty-right-arrow {
+    border-left: 6px solid white;
+    right: 50%;
+    margin-right: -17px;
+}
+
+.twentytwenty-horizontal .twentytwenty-handle:before {
+    bottom: 50%;
+    margin-bottom: 22px;
+    -webkit-box-shadow: 0 3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0 3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+    box-shadow: 0 3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+}
+
+.twentytwenty-horizontal .twentytwenty-handle:after {
+    top: 50%;
+    margin-top: 22px;
+    -webkit-box-shadow: 0 -3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0 -3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+    box-shadow: 0 -3px 0 white, 0px 0px 12px rgba(51, 51, 51, 0.5);
+}
+
+.showcaseImg {
+    border-radius: 0.4rem;
+}
+
+/* ========================================== TWENTY TWENTY END ========================================== */
+
+
+/* ========================================== INFO BLOCK START ========================================== */
+
+.infoBlock {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1.2rem;
+    border-radius: 0.4rem;
+}
+
+.infoDescriptionLogo img {
+    height: 12vh;
+    padding-bottom: 1vh;
+}
+
+.infoDescription {
+    text-align: justify !important;
+}
+
+.mintNowBtn button {
+    margin-top: 2%;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    border-radius: 0.4rem !important;
+    color: rgba(255, 255, 255, 1);
+    font-weight: bold;
+    font-size: 1.4rem;
+    /* border-color: rgba(255, 255, 255, 1); */
+    border: none !important;
+    background-color: transparent;
+    animation: mintNowBtnAnimation 2s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@media (max-width: 640px) {
+    .mintNowBtn button {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@keyframes mintNowBtnAnimation {
+    0% {
+        box-shadow: none;
+    }
+
+    100% {
+        box-shadow: 0 0 .4rem #fff, 0 0 .4rem #fff, 0 0 2rem rgba(233, 222, 222, 0.7), 0 0 0.8rem rgba(233, 222, 222, 0.7), 0 0 2.8rem rgba(233, 222, 222, 0.7), inset 0 0 1.3rem rgba(233, 222, 222, 0.7);
+    }
+}
+
+.mintNowBtn button:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-color: rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem rgb(255, 255, 255), 0 0 0.8rem rgb(255, 255, 255), 0 0 2.8rem rgb(255, 255, 255), inset 0 0 1.3rem rgb(255, 255, 255);
+    animation: none;
+}
+
+.mintNowBtn a {
+    text-decoration: none;
+}
+
+.mintNowBtn a:hover {
+    text-decoration: none;
+    text-shadow: none;
+    color: rgb(255, 255, 255);
+}
+
+.price-decimals {
+    font-size: 1.1rem;
+}
+
+.vertical-align {
+    display: flex;
+    align-items: center;
+}
+
+/* ========================================== INFO BLOCK END ========================================== */
+
+
+/* ========================================== MINT PAGE START ========================================== */
+
+
+.connectContainer {
+    /* height: 100vh; */
+    padding-top: calc(40vh - 50px);
+    color: rgb(206, 209, 224);
+}
+
+.connectBtn button {
+    border-radius: 0.4rem !important;
+    color: #efb615;
+    font-weight: bold;
+    min-width: 240px;
+    font-size: 1.8rem;
+    border-color: #efb615;
+    background-color: transparent;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+}
+
+.connectBtn button:hover {
+    background-color: transparent;
+    border-color: rgb(228, 201, 124);
+    color: rgb(228, 201, 124);
+}
+
+.provider-logo img {
+    width: 40px;
+}
+
+.modal-content {
+    border-radius: 0.4rem;
+    background-color: rgb(10, 10, 39);
+    border: 4px solid rgb(10, 10, 39);
+    box-shadow: 0 0 .2rem rgb(232, 219, 182), 0 0 .2rem rgb(232, 219, 182), 0 0 2rem rgb(228, 201, 124), 0 0 0.8rem rgb(228, 201, 124), 0 0 2.8rem rgb(228, 201, 124), inset 0 0 1.3rem rgb(228, 201, 124);
+    animation-timing-function: linear;
+}
+
+.wallet-connect-modal-item :hover {
+    background-color: rgb(23, 23, 84);
+}
+
+.wallet-connect-modal-item.first :hover {
+    border-top-left-radius: 0.4rem;
+    border-top-right-radius: 0.4rem;
+}
+
+.wallet-connect-modal-item.second {
+    border-top: 2px solid rgb(23, 23, 84);
+    border-bottom: 2px solid rgb(23, 23, 84);
+}
+
+.wallet-connect-modal-item.third :hover {
+    border-bottom-left-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+
+.walletconnect-modal__mobile__toggle {
+    color: rgb(10, 10, 39);
+}
+
+.connect-wallet-modal {
+    margin: 3rem;
+}
+
+.connect-title {
+    font-weight: bold;
+    font-size: 1.4rem;
+}
+
+.connect-description {
+    color: rgb(206, 209, 224);
+}
+
+@media (max-width: 640px) {
+    .connect-description {
+        margin-bottom: 1rem !important;
+    }
+}
+
+.connected-address {
+    color: rgb(206, 209, 224);
+    font-style: italic;
+    font-size: 1.6vh;
+}
+
+
+.disconnectWalletBtn button {
+    border-radius: 0.4rem !important;
+    color: rgb(206, 209, 224);
+    font-weight: 400;
+    font-size: 1.8vh;
+    border-color: rgb(206, 209, 224);
+    min-width: 160px;
+    background-color: transparent;
+}
+
+.disconnectWalletBtn button:hover {
+    background-color: rgb(137, 0, 0, 0.5);
+    border-color: rgb(137, 0, 0);
+    box-shadow: 0 0 .2rem #fff, 0 0 .2rem #fff, 0 0 2rem #fe1313, 0 0 0.8rem #fe1313, 0 0 2.8rem #fe1313, inset 0 0 1.3rem #fe1313;
+}
+
+.loading-spinner svg {
+    width: 5rem;
+    height: 5rem;
+}
+
+.registrationInfo-success {
+    color: #8dda97;
+}
+
+.registrationInfo-fail {
+    color: #da8d8d;
+}
+
+
+.mintForm {
+    /* max-height: 95vh; */
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    /* margin-top: 3rem;
+    margin-bottom: 3rem; */
+    width: 50%;
+    max-width: 60%;
+    border-radius: 0.4rem;
+    border: 3px solid #efb615;
+    background-color: rgba(9, 7, 1, 0.1);
+    /* background-color: rgb(212, 175, 55, 0.1); */
+}
+
+@media (max-width: 640px) {
+    .mintForm {
+        width: 90%;
+        max-width: 90%;
+        /* max-height: 105vh; */
+    }
+}
+
+.mintQuestion {
+    font-size: 2.2vh;
+    font-weight: bold;
+    color: rgb(206, 209, 224);
+}
+
+.mintAmountCounter {
+    font-size: 4vh;
+    font-weight: bold;
+    padding: 0px;
+    color: #efb615;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+.minus svg, .plus svg {
+    fill: rgb(206, 209, 224);
+    height: 5vh;
+    width: 5vh;
+    padding: 1vh;
+    border: 2px solid rgb(206, 209, 224);
+    border-radius: 0.4rem;
+    background-color: transparent;
+}
+
+.minus svg:hover, .plus svg:hover {
+    border-color: #efb615;
+    fill: #efb615;
+}
+
+.mintBtn button {
+    border-radius: 0.4rem !important;
+    color: #efb615;
+    font-weight: bold;
+    font-size: 3vh;
+    border-color: #efb615;
+    width: 100%;
+    background-color: transparent;
+    padding-top: 1.2vh;
+    padding-bottom: 1.2vh;
+}
+
+.mintBtn button:hover {
+    background-color: transparent;
+    border-color: rgb(228, 201, 124);
+    color: rgb(228, 201, 124);
+}
+
+.mintPriceTotal {
+    font-size: 2.4vh;
+    font-weight: bold;
+    color: rgb(206, 209, 224);
+}
+
+.mintPriceZero {
+    font-size: 3vh;
+    color: rgb(230, 215, 173);
+    font-weight: bold;
+}
+
+.mintPriceNumbers {
+    color: rgb(230, 215, 173);
+    font-size: 2.4vh;
+    font-weight: bold;
+}
+
+.mint-tip {
+    color: rgb(206, 209, 224);
+    font-style: italic;
+    font-size: 1.6vh;
+}
+
+.contenedor {
+    -webkit-perspective: 5000vh;
+    perspective: 5000vh;
+    perspective-origin: 50% 50%;
+}
+
+.cube,
+.cube .cubeCard {
+    height: 30vh;
+    width: 30vh;
+}
+
+.cube {
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: rotateX(-30deg) rotateY(30deg);
+    transform: rotateX(-30deg) rotateY(-30deg);
+    margin: 7vh auto;
+    -webkit-animation: giro 25s infinite linear;
+    animation: giro 25s infinite linear;
+}
+
+.cube .cubeCard {
+    position: absolute;
+    border: 5px solid #efb615;
+    opacity: 1;
+    transition: 0.2s;
+}
+
+/*card frontal*/
+.cube .cubeCard:nth-child(1) {
+    -webkit-transform: translateZ(15vh);
+    transform: translateZ(15vh);
+}
+
+/*card posterior*/
+.cube .cubeCard:nth-child(2) {
+    -webkit-transform: rotateY(180deg) translateZ(15vh);
+    transform: rotateY(180deg) translateZ(15vh);
+}
+
+/*card izquierda*/
+.cube .cubeCard:nth-child(3) {
+    -webkit-transform: rotateY(-90deg) translateZ(15vh);
+    transform: rotateY(-90deg) translateZ(15vh);
+}
+
+/*card derecha*/
+.cube .cubeCard:nth-child(4) {
+    -webkit-transform: rotateY(90deg) translateZ(15vh);
+    transform: rotateY(90deg) translateZ(15vh);
+}
+
+/*card superior*/
+.cube .cubeCard:nth-child(5) {
+    -webkit-transform: rotateX(90deg) translateZ(15vh);
+    transform: rotateX(90deg) translateZ(15vh);
+}
+
+/*card inferior*/
+.cube .cubeCard:nth-child(6) {
+    -webkit-transform: rotateX(-90deg) translateZ(15vh);
+    transform: rotateX(-90deg) translateZ(15vh);
+}
+
+@-webkit-keyframes giro {
+    0% {
+        -webkit-transform: rotateX(-45deg) rotateY(0deg);
+    }
+
+    50% {
+        -webkit-transform: rotateX(45deg) rotateY(360deg);
+    }
+
+    100% {
+        -webkit-transform: rotateX(-45deg) rotateY(720deg);
+    }
+}
+
+@keyframes giro {
+    0% {
+        transform: rotateX(-45deg) rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateX(45deg) rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateX(-45deg) rotateY(720deg);
+    }
+}
+
+@-webkit-keyframes giro360 {
+    0% {
+        -webkit-transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+@keyframes giro360 {
+    0% {
+        transform: rotateX(0deg) rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateX(360deg) rotateY(360deg);
+    }
+}
+
+/* ========================================== MINT PAGE END ========================================== */
+
+/* ======================================= FAQ PAGE START ======================================= */
+
+.faq-section-container {
+    min-height: calc(100vh - 100px);
+}
+
+.faq-title {
+    justify-content: center !important;
+    
+}
+
+.faq-title h2 {
+    font-weight: bold;
+    padding-bottom: 1vh;
+    color: #efb615 !important;
+}
+
+.FAQPage .row-title-text {
+    color: rgba(255, 255, 255, 0.9) !important;
+    color: rgb(228, 201, 124) !important;
+    font-weight: bold;
+}
+
+.row-content-text {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.twitterProfile {
+    color: rgb(29, 155, 240);
+}
+
+/* ======================================= FAQ PAGE END ======================================= */
