@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -43,18 +44,20 @@
 						<div class="col-lg-6 justify-content-center align-items-center vertical-align infoBlock">
 							<div class="container mb-5">
 								<div class="infoDescriptionLogo"><img class="img-fluid" src="assets/logo.png" alt=""></div>
-								<div class="infoDescription typewriter">
-									<div class="indent">As tech art lovers, we decided to see what would happen if we use some cool pixelated punks to inspire AI for creating the art. The stunning versions of the famous CryptoPunks exceeded all our expectations!</div>
+								<div class="infoDescription css-typing">
+                                    <div class="indent" id="typedtext"></div>
+                                    <div class="indent" id="typedtext1"></div>
+									<div class="indent type">As tech art lovers, we decided to see what would happen if we use some cool pixelated punks to inspire AI for creating the art. The stunning versions of the famous CryptoPunks exceeded all our expectations!</div>
 									<br>
-									<div class="indent">We decided that the community should see this and created a collection of <span class="bold">10,000 AI-generated</span> Punks. For us, this will be the beginning of the large-scale development of generative AI art in the NFT community. Tech is the future, and NFT is the future of art!</div>
+									<div class="indent type">We decided that the community should see this and created a collection of <span class="bold">10,000 AI-generated</span> Punks. For us, this will be the beginning of the large-scale development of generative AI art in the NFT community. Tech is the future, and NFT is the future of art!</div>
 									<br>
-									<div class="text-center"><strong>Free Mint. 5 per wallet allowed.</strong>
+									<div class="text-center type"><strong>Free Mint. 5 per wallet allowed.</strong>
 										<br>
 										<br>Join us for fun and beauty!</div>
 								</div>
 								<div class="container text-center pt-3 pb-3">
 									<div class="mintNowBtn">
-										<button class="btn btn-outline-dark rounded-pill"><a target="_blank" rel="noreferrer">Connect Wallet</a></button>
+										<button class="btn btn-outline-dark rounded-pill"><a target="_blank" rel="noreferrer" id="connect-wallet">Connect Wallet</a></button>
 									</div>
 								</div>
 							</div>
@@ -65,6 +68,16 @@
 		</div>
 	</div>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script
+	src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.26.1/axios.min.js"
+	integrity="sha512-bPh3uwgU5qEMipS/VOmRqynnMXGGSRv+72H/N260MQeXZIK4PG48401Bsby9Nq5P5fz7hy5UGNmC/W1Z51h2GQ=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+  	></script>
+    <script type="text/javascript" src="https://unpkg.com/web3@1.6.0/dist/web3.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/web3modal@1.9.4/dist/index.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/@walletconnect/web3-provider@1.6.6/dist/umd/index.min.js"></script>
+    <script src="/static/js/index.js"></script> 
 	</body>
 
 </html>
