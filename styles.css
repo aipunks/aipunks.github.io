@@ -9,6 +9,84 @@ body {
     margin: 0;
     -webkit-overflow-scrolling: auto;
 }
+
+
+.grey-back {
+    position: relative;
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin:0px auto;
+    width: 400px;
+    padding-top: 25px;
+
+}
+
+.mb-10{
+margin-bottom: 10px !important;
+}
+
+#counter {
+width: 6vw;
+height: 2vw;
+display: flex;
+flex-wrap: nowrap;
+align-items: center;
+justify-content: space-around;
+border: 1px solid #000;
+border-radius: 30px;
+
+}
+
+#counter span {
+font-family: "roc-grotesk-wide", Sans-serif;
+font-size: 1.5vw;
+line-height: 34px;
+text-transform: uppercase;
+color: #215ccc;
+}
+
+#counter .plus-minus {
+color: #ff6363;
+font-size: 2.2vw;
+font-family: "roc-grotesk-wide", Sans-serif;
+cursor: pointer;
+user-select: none;
+-webkit-user-select: none;
+-khtml-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+}
+
+@media (max-width: 1000px) {
+    #counter {
+        width: 7.5vw;
+        height: 2.5vw;
+    }
+
+    #counter span {
+        font-size: 1.8vw;
+    }
+    #counter .plus-minus {
+        font-size: 2.5vw;
+    }
+}
+
+@media (max-width: 767px) {
+    #counter {
+        width: 11vw;
+        height: 4.5vw;
+    }
+
+    #counter span {
+        font-size: 3vw;
+    }
+    #counter .plus-minus {
+        font-size: 3.5vw;
+    }
+}
  
 
 a {
@@ -117,6 +195,8 @@ a:hover {
 .header-logo {
     height: 30px;
 }
+
+
 
 @media (max-width: 640px) {
     .header-logo {
