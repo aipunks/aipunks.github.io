@@ -19,7 +19,6 @@ body {
     align-items: center;
     justify-content: center;
     margin:0px auto;
-    width: 400px;
     padding-top: 25px;
 
 }
@@ -85,6 +84,20 @@ user-select: none;
     }
     #counter .plus-minus {
         font-size: 3.5vw;
+    }
+}
+
+@media (max-width: 467px) {
+    #counter {
+        width: 15vw;
+        height: 6vw;
+    }
+
+    #counter span {
+        font-size: 4vw;
+    }
+    #counter .plus-minus {
+        font-size: 4.5vw;
     }
 }
  
